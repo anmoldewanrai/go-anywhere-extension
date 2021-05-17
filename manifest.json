@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Go Anywhere",
+  "version": "1.0.0",
+
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "open-youtube": {
+      "suggested_key": {
+        "default": "Ctrl+Q"
+      },
+      "description": "Opens Youtube"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": ["tabs", "activeTab"]
+}
